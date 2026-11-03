@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personalised printable birthday party packs made to make party planning easier.">
+  <title>READYSET | Make your party easy</title>
+  <style>
+    :root {
+      --navy: #18324a;
+      --blue: #dceaf3;
+      --cream: #fbfaf7;
+      --gold: #e7b85c;
+      --ink: #263746;
+      --muted: #607384;
+      --white: #fff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; background: var(--cream); color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif; line-height: 1.6;
+    }
+    .wrap { width: min(1080px, calc(100% - 40px)); margin: auto; }
+    header { padding: 22px 0; border-bottom: 1px solid #e6edf1; }
+    .nav { display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    .brand { color:var(--navy); font-weight:900; letter-spacing:3px; font-size:1.25rem; }
+    .nav a { color:var(--navy); text-decoration:none; font-weight:700; }
+    .hero { padding:76px 0 62px; }
+    .hero-grid { display:grid; grid-template-columns:1.1fr .9fr; gap:48px; align-items:center; }
+    .eyebrow { color:#8b6827; text-transform:uppercase; letter-spacing:2px; font-size:.78rem; font-weight:800; }
+    h1 { color:var(--navy); font-size:clamp(2.7rem, 6vw, 5rem); line-height:1.02; margin:14px 0 20px; letter-spacing:-2px; }
+    .lead { color:var(--muted); font-size:1.15rem; max-width:590px; }
+    .button { display:inline-block; background:var(--navy); color:white; padding:14px 23px; border-radius:8px; text-decoration:none; font-weight:800; margin-top:18px; }
+    .button:hover { background:#284b68; }
+    .note { color:var(--muted); font-size:.85rem; margin-top:12px; }
+    .mockup { background:var(--blue); padding:24px; border-radius:22px; transform:rotate(1deg); }
+    .paper { background:white; min-height:370px; padding:34px 25px; border-radius:8px; box-shadow:0 18px 35px #18324a18; text-align:center; display:flex; flex-direction:column; justify-content:center; }
+    .paper .mini { letter-spacing:3px; font-size:.72rem; color:var(--muted); font-weight:800; }
+    .paper h2 { color:var(--navy); font-size:2.1rem; line-height:1.1; margin:18px 0; }
+    .paper .rule { height:3px; width:55px; background:var(--gold); margin:10px auto 20px; }
+    .paper p { color:var(--muted); }
+    section { padding:62px 0; }
+    .section-title { text-align:center; color:var(--navy); font-size:2rem; margin:0 0 12px; }
+    .section-lead { text-align:center; color:var(--muted); max-width:650px; margin:0 auto 34px; }
+    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .card { background:white; border:1px solid #e6edf1; border-radius:14px; padding:24px; }
+    .number { width:34px; height:34px; border-radius:50%; background:var(--blue); color:var(--navy); display:grid; place-items:center; font-weight:900; }
+    .card h3 { color:var(--navy); margin:14px 0 7px; }
+    .card p { color:var(--muted); margin:0; }
+    .product { background:var(--blue); }
+    .product-grid { display:grid; grid-template-columns:1fr 1fr; gap:42px; align-items:center; }
+    .product-panel { background:white; border-radius:16px; padding:28px; }
+    .price { color:var(--navy); font-size:2.5rem; font-weight:900; margin:6px 0; }
+    ul { padding-left:20px; }
+    li { margin:8px 0; }
+    .faq { max-width:760px; margin:auto; }
+    .faq-item { border-bottom:1px solid #e1e8ed; padding:18px 0; }
+    .faq h3 { color:var(--navy); margin:0 0 5px; font-size:1.05rem; }
+    .faq p { color:var(--muted); margin:0; }
+    .order { background:var(--navy); color:white; text-align:center; }
+    .order h2 { font-size:2.2rem; margin:0 0 10px; }
+    .order p { color:#d5e1e9; max-width:620px; margin:0 auto; }
+    .order .button { background:var(--gold); color:var(--navy); }
+    footer { padding:24px 0; color:var(--muted); font-size:.85rem; text-align:center; }
+    @media (max-width:760px) {
+      .hero-grid,.product-grid { grid-template-columns:1fr; }
+      .hero { padding:48px 0; }
+      .cards { grid-template-columns:1fr; }
+      .mockup { max-width:480px; margin:auto; width:100%; }
+      h1 { letter-spacing:-1px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">READYSET</div>
+      <a href="#what-you-get">What's included</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Less planning. More celebrating.</div>
+          <h1>Make your party<br>easy.</h1>
+          <p class="lead">Personalised printable party packs with games, activities and little details that help bring your celebration together.</p>
+          <a class="button" href="#order">Get your birthday pack</a>
+          <p class="note">A digital PDF you can print at home. No physical product is posted.</p>
+        </div>
+        <div class="mockup" aria-label="Preview of a birthday party pack">
+          <div class="paper">
+            <div class="mini">READYSET PRESENTS</div>
+            <h2>THE ULTIMATE<br>BIRTHDAY<br>PARTY PACK</h2>
+            <div class="rule"></div>
+            <p>Invitations · Games · Activities<br>Schedules · Thank-you cards</p>
+            <div class="mini">MADE FOR YOUR CELEBRATION</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="what-you-get">
+      <div class="wrap">
+        <h2 class="section-title">Everything in one little pack</h2>
+        <p class="section-lead">A simple set of printable pages to help make party planning easier and give guests something fun to do.</p>
+        <div class="cards">
+          <div class="card"><div class="number">1</div><h3>Invitation</h3><p>A coordinated invitation with your event details.</p></div>
+          <div class="card"><div class="number">2</div><h3>Party plan</h3><p>A handy schedule and host checklist to keep things organised.</p></div>
+          <div class="card"><div class="number">3</div><h3>Games & activities</h3><p>Trivia, a scavenger hunt and quick party games.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product">
+      <div class="wrap product-grid">
+        <div>
+          <div class="eyebrow">The first READYSET release</div>
+          <h2 style="color:var(--navy);font-size:2.3rem;line-height:1.1;margin:12px 0;">The Ultimate Birthday Party Pack</h2>
+          <p>Tell us the theme and a few details. Your pack can be personalised with the birthday person's name and event information.</p>
+          <ul>
+            <li>6 printable A4 pages</li>
+            <li>Invitation and party schedule</li>
+            <li>Birthday trivia and scavenger hunt</li>
+            <li>Quick party games and thank-you cards</li>
+            <li>Delivered as a digital PDF</li>
+          </ul>
+        </div>
+        <div class="product-panel">
+          <div class="eyebrow">Introductory price</div>
+          <div class="price">A$7.95</div>
+          <p style="color:var(--muted);margin-top:0;">One digital pack. Print as many copies as you need for your own event.</p>
+          <a class="button" href="#order">Ask about an order</a>
+          <p class="note">Final personalisation and delivery details are confirmed before payment.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2 class="section-title">How it works</h2>
+        <p class="section-lead">Three simple steps from idea to party-ready pages.</p>
+        <div class="cards">
+          <div class="card"><div class="number">1</div><h3>Tell us your theme</h3><p>Share the party theme, name and event details you want included.</p></div>
+          <div class="card"><div class="number">2</div><h3>We personalise it</h3><p>Your printable pack is prepared and checked before it is sent.</p></div>
+          <div class="card"><div class="number">3</div><h3>Download & print</h3><p>Receive the PDF and print the pages you want to use.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section style="background:white;">
+      <div class="wrap faq">
+        <h2 class="section-title">Good to know</h2>
+        <div class="faq-item"><h3>Is this a physical product?</h3><p>No. This is a digital PDF download. Nothing is shipped.</p></div>
+        <div class="faq-item"><h3>Can I choose my own theme?</h3><p>Yes. Send your preferred theme and we'll confirm what can be personalised.</p></div>
+        <div class="faq-item"><h3>How quickly will I receive it?</h3><p>Delivery timing is confirmed when your order is discussed. Please allow time for personalisation and checking.</p></div>
+      </div>
+    </section>
+
+    <section class="order" id="order">
+      <div class="wrap">
+        <h2>Ready to plan your party?</h2>
+        <p>Send your party theme, name and date to ask about a personalised READYSET pack.</p>
+        <!-- Replace YOUR-EMAIL-HERE with a monitored business email before publishing. -->
+        <a class="button" href="mailto:204010@scotsalbury.nsw.edu.au?subject=READYSET%20Birthday%20Pack%20Enquiry">Enquire about a pack</a>
+        <p class="note" style="color:#d5e1e9;">Email enquiries will be sent to 204010@scotsalbury.nsw.edu.au.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© READYSET · Digital party printables · All designs and wording should be checked before customer delivery.</div>
+  </footer>
+</body>
+</html>
